@@ -1,0 +1,156 @@
+/*
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+   /* font family */
+   --crimson: "Crimson Text", serif;
+   --word-sans: "Work Sans", sans-serif;
+   /* heading Size */
+   --h1: 4rem;
+   --h2: 3.2rem;
+   --h3: 2.8rem;
+   --h4: 2.4rem;
+   --h5: 2rem;
+   --h6: 1.6rem;
+   --sub-heading: 2rem;
+
+   --label: 1.6rem;
+   --letter-spacing: 5px;
+   --body: 1.4rem;
+
+   /* colors */
+   --color-dark-100: rgba(33, 37, 41, 1);
+   --color-dark-75: rgba(33, 37, 41, 0.75);
+   --color-dark-50: rgba(33, 37, 41, 0.5);
+   --color-dark-25: rgba(33, 37, 41, 0.25);
+
+   --color-white-100: rgb(255, 255, 255, 1);
+   --color-white-75: rgb(255, 255, 255, 0.75);
+   --color-white-50: rgb(255, 255, 255, 0.5);
+   --color-white-25: rgb(255, 255, 255, 0.25);
+
+   --color-green-100: rgb(116, 198, 157, 1);
+   --color-green-75: rgb(116, 198, 157, 0.75);
+   --color-green-50: rgb(116, 198, 157, 0.5);
+   --color-green-25: rgb(116, 198, 157, 0.25);
+}
+/* !CSS RESET */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+   outline: none;
+}
+html {
+   font-family: var(--word-sans);
+   font-size: 62.5%;
+   box-sizing: border-box;
+}
+img {
+   max-width: 100%;
+   display: block;
+}
+a:link,
+a:visited {
+   text-decoration: none;
+   display: inline-block;
+}
+/* *Layout System */
+.container {
+   max-width: 120rem;
+   margin: 0 auto;
+   padding: 0 3.2rem;
+}
+.grid {
+   display: grid;
+   row-gap: 4.8rem;
+   column-gap: 6.4rem;
+}
+.grid-cols-2 {
+   grid-template-columns: repeat(2, 1fr);
+}
+.grid-cols-3 {
+   grid-template-columns: repeat(3, 1fr);
+}
+.grid-cols-4 {
+   grid-template-columns: repeat(4, 1fr);
+}
+.grid-center-v {
+   align-items: center;
+}
+/* ! Custome Repeated CSS */
+.label {
+   font-size: var(--label);
+   letter-spacing: var(--letter-spacing);
+   text-transform: uppercase;
+   font-weight: 700;
+}
+
+/* *text Color */
+.text-white {
+   color: var(--color-white-100);
+}
+.text-black {
+   color: var(--color-dark-100);
+}
+.text-green {
+   color: var(--color-green-100-100);
+}
+
+/* *Btn */
+.btn:link,
+.btn:visited {
+   font-size: var(--h5);
+   padding: 1rem 4rem;
+   border-radius: 8px;
+   cursor: pointer;
+}
+.btn-white {
+   background-color: var(--color-white-100);
+   color: var(--color-dark-100);
+}
+.btn-dark {
+   background-color: var(--color-dark-100);
+   color: var(--color-white-100);
+}
+
+/* *header */
+.header {
+   background-color: var(--color-green-100);
+}
+.header-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 6.4rem;
+}
+.header__logo {
+   display: flex;
+   gap: 0.8rem;
+}
+.header__logo--img {
+   height: 2.4rem;
+}
+.header__logo--text {
+   display: inline-block;
+   font-size: 2.4rem;
+   color: var(--color-white-100);
+   font-weight: 500;
+}
+.header__nav {
+   list-style: none;
+   display: flex;
+   gap: 1.6rem;
+}
+.header__nav--link {
+   font-size: 1.6rem;
+   color: var(--color-white-100);
+}
