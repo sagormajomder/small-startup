@@ -1,0 +1,44 @@
+/* Desktop First Approach */
+@media (max-width: 1200px) {
+   .container {
+      max-width: 114rem;
+   }
+}
+@media (max-width: 1024px) {
+   .container {
+      max-width: 97rem;
+   }
+}
+@media (max-width: 768px) {
+   .container {
+      max-width: 74rem;
+   }
+   .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--color-green-100);
+   }
+   .hide-navbar {
+      display: none;
+   }
+   .header__nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      gap: 4rem;
+   }
+   .header__nav li:first-child {
+      margin-top: -200px;
+   }
+   .header__icon {
+      display: block;
+   }
+}
+@media (max-width: 568px) {
+   .container {
+      max-width: 90%;
+   }
+}
