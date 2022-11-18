@@ -6,23 +6,24 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Small Startup - Home</title>
       <link rel="stylesheet" href="./styles/designSystem.css" />
-      <link rel="stylesheet" href="./styles/style.css" />
+      <link rel="stylesheet" href="./styles/home.css" />
       <link rel="stylesheet" href="./styles/responsive.css" />
    </head>
    <body>
       <!-- header -->
       <header class="header">
-         <div class="container header-container">
+         <div class="container header--container">
             <div class="header__logo">
-               <img
-                  class="header__logo--img"
-                  src="./img/Logo/LogoWhite.svg"
-                  alt="small startup logo"
-               />
-               <span class="header__logo--text">Start</span>
+               <a href="#"
+                  ><img
+                     class="header__logo--img"
+                     src="./img/Logo/LogoWhite.svg"
+                     alt="small startup logo"
+               /></a>
+               <a href="#"><span class="header__logo--text">Start</span></a>
             </div>
 
-            <nav class="navbar hide-navbar">
+            <nav class="navbar">
                <ul class="header__nav">
                   <li><a href="#" class="header__nav--link">Home</a></li>
                   <li><a href="#" class="header__nav--link">Portfolio</a></li>
@@ -30,16 +31,83 @@
                   <li><a href="#" class="header__nav--link">Contact</a></li>
                </ul>
             </nav>
-            <div class="header__icon">
-               <i class="bi bi-list"></i>
-               <i class="bi bi-x-lg hidden"></i>
-            </div>
+            <!-- Mobile Navigation -->
+            <!-- <button class="btn-mobile-nav">
+               <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+               <ion-icon
+                  class="mobile-nav-icon"
+                  name="close-outline"
+               ></ion-icon>
+            </button> -->
          </div>
       </header>
       <main>
          <!--Start Hero Section -->
+         <section class="section-hero">
+            <div class="container grid grid-cols-2 hero--container">
+               <div class="hero__text-box">
+                  <span class="label text-white margin-bottom-sm">Welcome</span>
+                  <h1 class="primary-heading text-white margin-bottom-md">
+                     Lorem ipsum dolor sit amet consectetur
+                  </h1>
+                  <p class="hero__text-box--text text-white margin-bottom-lg">
+                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                     Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos
+                     error ipsum, voluptate culpa nesciunt delectus iste?
+                  </p>
+                  <a class="btn btn-white hero-btn" href="#">Explore</a>
+               </div>
+               <div class="hero__img-box">
+                  <img
+                     src="./img/Home/image-1.svg"
+                     alt="pupils play game, pupils generate idea and organize their idea"
+                     class="hero__img-box--img"
+                  />
+               </div>
+            </div>
+         </section>
          <!--End Hero Section -->
       </main>
+      <footer>
+         <div class="container grid grid-cols-2">
+            <ul class="footer__socials">
+               <li>
+                  <a href="#"><ion-icon name="logo-facebook"> </ion-icon></a>
+               </li>
+               <li>
+                  <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+               </li>
+               <li>
+                  <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+               </li>
+               <li>
+                  <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+               </li>
+               <li>
+                  <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+               </li>
+               <li>
+                  <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+               </li>
+               <li>
+                  <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+               </li>
+            </ul>
+            <p class="credit text-white">
+               &copy; Start, 2022. All rights reserved.
+            </p>
+         </div>
+      </footer>
+      <!-- Icons -->
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+      <!-- custome JS -->
+      <script defer src="./main.js"></script>
    </body>
-   <script src="./main.js"></script>
 </html>
