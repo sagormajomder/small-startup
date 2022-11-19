@@ -89,6 +89,9 @@ a:visited {
 .grid-cols-4 {
    grid-template-columns: repeat(4, 1fr);
 }
+.grid-cols-5 {
+   grid-template-columns: repeat(5, 1fr);
+}
 .grid-center-h {
    justify-items: center;
 }
@@ -123,7 +126,11 @@ a:visited {
    color: var(--color-dark-100) !important;
 }
 .text-green {
-   color: var(--color-green-100-100) !important;
+   color: var(--color-green-100) !important;
+}
+
+.text-center {
+   text-align: center !important;
 }
 
 /* *Btn */
