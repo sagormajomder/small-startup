@@ -311,13 +311,12 @@ footer {
       display: block;
       border: none;
       background: none;
-      outline: none;
-      z-index: 100;
+      z-index: 9999;
       cursor: pointer;
    }
    .mobile-nav-icon {
-      width: 3.2rem;
-      height: 3.2rem;
+      width: 4.4rem;
+      height: 4.4rem;
       color: var(--color-white-100);
    }
    [name="close-outline"] {
@@ -330,6 +329,23 @@ footer {
       display: block;
    }
 }
+/* --->Width:672px=42em */
+@media (max-width: 42em) {
+   .footer--container {
+      grid-template-columns: 1fr;
+      row-gap: 0.8rem;
+      justify-items: center;
+   }
+   .btn {
+      font-size: var(--h6);
+   }
+
+   .credit:link,
+   .credit:visited {
+      justify-self: unset;
+   }
+}
+
 /*
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
