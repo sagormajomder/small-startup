@@ -1,0 +1,57 @@
+.header {
+   background-color: $color-green-100;
+   padding: 1.6rem 0;
+   position: relative;
+
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 6.4rem;
+   }
+
+   &__logo-box {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+   }
+   &__logo {
+      height: 4.8rem;
+   }
+   &__text {
+      display: inline-block;
+      font-size: $h1;
+      color: $color-white-100;
+      font-weight: 500;
+   }
+
+   &__navbar {
+      list-style: none;
+      display: flex;
+      gap: 2.4rem;
+   }
+   &__navbar-link {
+      &:link,
+      &:visited {
+         font-size: $sub-text;
+         color: $color-white-100;
+         transition: all 0.3s;
+      }
+
+      &:hover,
+      &:active {
+         color: $color-dark-100;
+      }
+   }
+
+   &__mobile-nav {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+   }
+   &__mobile-nav-icon {
+      font-size: $h2;
+      color: $color-white-100;
+   }
+}

@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
+   outline: none;
+}
+html {
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+body {
+   font-family: var($font-work-sans);
+   box-sizing: border-box;
+   font-weight: 400;
+   line-height: 1.5;
+   overflow-x: hidden;
+}
+img {
+   max-width: 100%;
+   display: block;
+}
+a:link,
+a:visited {
+   text-decoration: none;
+   display: inline-block;
+}

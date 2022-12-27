@@ -1,0 +1,25 @@
+.label {
+   font-size: $label;
+   letter-spacing: $letter-spacing;
+   text-transform: uppercase;
+   font-weight: 700;
+   display: inline-block;
+   margin-bottom: 1.6rem;
+}
+.heading-primary {
+   font-size: $h1;
+   line-height: 1;
+   font-weight: 600;
+   font-family: $font-crimson;
+   margin-bottom: 2.4rem;
+}
+
+.paragraph {
+   font-size: $body;
+   margin-bottom: 2.4rem;
+}
+.sub-text {
+   width: 40rem;
+   font-size: $sub-text;
+   margin: 0 auto;
+}

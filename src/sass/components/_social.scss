@@ -1,12 +1,13 @@
-.footer {
-   padding: 1.8rem 0;
-   background-color: $color-green-100;
-   &__credit {
+.social {
+   display: flex;
+   gap: 2.4rem;
+   align-items: center;
+   list-style: none;
+   &__link {
       &:link,
       &:visited {
+         font-size: 1.8rem;
          color: $color-white-100;
-         font-size: 1.4rem;
-         justify-self: end;
          transition: all 0.3s;
       }
 

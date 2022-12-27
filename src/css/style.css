@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* font family */
+/* heading Size */
+/* colors */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var("Work Sans", sans-serif);
+  box-sizing: border-box;
+  font-weight: 400;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.label {
+  font-size: 1.6rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 1.6rem;
+}
+
+.heading-primary {
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 600;
+  font-family: "Crimson Text", serif;
+  margin-bottom: 2.4rem;
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 2.4rem;
+}
+
+.sub-text {
+  width: 40rem;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.text-white {
+  color: rgb(255, 255, 255);
+}
+
+.text-black {
+  color: rgb(33, 37, 41);
+}
+
+.text-grey {
+  color: rgba(33, 37, 41, 0.5);
+}
+
+.text-green {
+  color: rgb(116, 198, 157);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1.6rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 2.4rem;
+}
+
+.margin-bottom-lg {
+  margin-bottom: 3.2rem;
+}
+
+.margin-bottom-huge {
+  margin-bottom: 4.8rem;
+}
+
+.btn:link, .btn:visited {
+  font-size: 2rem;
+  padding: 1rem 4rem;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn--white {
+  background-color: rgb(255, 255, 255);
+  color: rgb(33, 37, 41);
+}
+.btn--white:hover, .btn--white:active {
+  color: rgb(255, 255, 255);
+  background: none;
+  box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+}
+.btn--dark {
+  background-color: rgb(33, 37, 41);
+  color: rgb(255, 255, 255);
+}
+.btn--dark:hover, .btn--dark:active {
+  color: rgb(33, 37, 41);
+  background: none;
+  box-shadow: inset 0 0 0 2px rgb(33, 37, 41);
+}
+
+.btn-mobile-nav {
+  display: none;
+}
+
+.team {
+  display: grid;
+  gap: 4.8rem;
+}
+.team__member {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+  padding: 1.8rem 2.4rem;
+  box-shadow: 0 0.8rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+.team__member:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+.team__member img {
+  max-width: 80%;
+}
+.team__title, .team__position {
+  align-self: start;
+}
+.team__title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.team__position {
+  font-size: 1.6rem;
+  color: rgba(33, 37, 41, 0.75);
+  text-transform: uppercase;
+}
+
+.social {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  list-style: none;
+}
+.social__link:link, .social__link:visited {
+  font-size: 1.8rem;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+}
+.social__link:hover, .social__link:active {
+  color: rgb(33, 37, 41);
+}
+
+.container {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  row-gap: 6.4rem;
+  column-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-center-h {
+  justify-items: center;
+}
+
+.grid-center-v {
+  align-items: center;
+}
+
+.header {
+  background-color: rgb(116, 198, 157);
+  padding: 1.6rem 0;
+  position: relative;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 6.4rem;
+}
+.header__logo-box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.header__logo {
+  height: 4.8rem;
+}
+.header__text {
+  display: inline-block;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+}
+.header__navbar {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.header__navbar-link:link, .header__navbar-link:visited {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+}
+.header__navbar-link:hover, .header__navbar-link:active {
+  color: rgb(33, 37, 41);
+}
+.header__mobile-nav {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.header__mobile-nav-icon {
+  font-size: 3.2rem;
+  color: rgb(255, 255, 255);
+}
+
+.footer {
+  padding: 1.8rem 0;
+  background-color: rgb(116, 198, 157);
+}
+.footer__credit:link, .footer__credit:visited {
+  color: rgb(255, 255, 255);
+  font-size: 1.4rem;
+  justify-self: end;
+  transition: all 0.3s;
+}
+.footer__credit:hover, .footer__credit:active {
+  color: rgb(33, 37, 41);
+}
+
+/*******************************/
+/*!  Hero Section  */
+/******************************/
+.section-hero {
+  padding: 4.8rem 0 9.6rem;
+  background-color: rgb(116, 198, 157);
+}
+
+.hero__text-box {
+  justify-self: start;
+}
+
+/* .hero-btn:hover,
+.hero-btn:active {
+   color: var(--color-white-100);
+   background: none;
+   box-shadow: inset 0 0 0 2px var(--color-white-100);
+} */
+/*******************************/
+/*!  FEATURE IN SECTION  */
+/******************************/
+.section-feature-in {
+  padding: 4.8rem 0 9.6rem;
+}
+
+.feature-in--text {
+  font-size: 1.6rem;
+}
+
+.feature-in__text-box {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.feature-in__company-logo {
+  display: grid;
+  gap: 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+/*******************************/
+/*!  SECTION 3  */
+/******************************/
+.section-3 {
+  padding: 4.8rem 0 9.6rem;
+}
+
+/*******************************/
+/*!  SECTION 4  */
+/******************************/
+.section-4 {
+  padding: 4.8rem 0 9.6rem;
+}
+
+/*******************************/
+/*!  SECTION TEAM  */
+/******************************/
+.section-team {
+  padding: 4.8rem 0 9.6rem;
+}
+
+/*# sourceMappingURL=style.css.map */

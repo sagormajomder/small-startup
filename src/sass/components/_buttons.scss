@@ -1,0 +1,36 @@
+.btn {
+   &:link,
+   &:visited {
+      font-size: $h5;
+      padding: 1rem 4rem;
+      border-radius: 0.8rem;
+      cursor: pointer;
+      transition: all 0.3s;
+   }
+   &--white {
+      background-color: $color-white-100;
+      color: $color-dark-100;
+
+      &:hover,
+      &:active {
+         color: $color-white-100;
+         background: none;
+         box-shadow: inset 0 0 0 2px $color-white-100;
+      }
+   }
+   &--dark {
+      background-color: $color-dark-100;
+      color: $color-white-100;
+
+      &:hover,
+      &:active {
+         color: $color-dark-100;
+         background: none;
+         box-shadow: inset 0 0 0 2px $color-dark-100;
+      }
+   }
+}
+
+.btn-mobile-nav {
+   display: none;
+}
