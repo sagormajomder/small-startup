@@ -1,0 +1,21 @@
+{
+   "name": "small-startup",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.html",
+   "scripts": {
+      "sass": "sass src/sass/main src/css/style.css",
+      "live": "live-server"
+   },
+   "repository": {
+      "type": "git",
+      "url": "git+https://github.com/sagormajomder/small-startup.git"
+   },
+   "author": "Sagor Majomder",
+   "license": "ISC",
+   "bugs": {
+      "url": "https://github.com/sagormajomder/small-startup/issues"
+   },
+   "homepage": "https://github.com/sagormajomder/small-startup#readme",
+   "devDependencies": {}
+}
