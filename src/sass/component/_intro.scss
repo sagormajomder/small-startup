@@ -1,0 +1,11 @@
+.intro {
+   &__content {
+      grid-column: col-start 4 / col-end 7;
+      text-align: center;
+      color: var(--color-dark-100);
+   }
+
+   &__text {
+      font-size: var(--sub-heading);
+   }
+}

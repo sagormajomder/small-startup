@@ -1,0 +1,32 @@
+.btn {
+   &:link,
+   &:visited {
+      padding: 1rem 4rem;
+      text-align: center;
+      font-size: var(--sub-heading);
+      border-radius: 0.7rem;
+
+      transition: all 0.3s ease;
+   }
+
+   &--white {
+      background-color: var(--color-white-100);
+      color: var(--color-dark-100);
+
+      &:hover,
+      &:active {
+         background-color: var(--color-dark-100);
+         color: var(--color-white-100);
+      }
+   }
+   &--dark {
+      background-color: var(--color-dark-100);
+      color: var(--color-white-100);
+
+      &:hover,
+      &:active {
+         background-color: var(--color-green-100);
+         color: var(--color-white-100);
+      }
+   }
+}

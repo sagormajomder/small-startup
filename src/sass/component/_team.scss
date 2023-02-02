@@ -1,0 +1,40 @@
+.team {
+   grid-column: center-start / center-end;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   margin-bottom: 6rem;
+   &__member {
+      padding: 2.4rem 4rem;
+      box-shadow: 0 1rem 2rem var(--color-dark-25);
+      transition: all 0.4s;
+
+      &:hover {
+         transform: translateY(-2rem);
+         box-shadow: 0 1.5rem 2.5rem var(--color-dark-25);
+      }
+   }
+   &__img {
+      margin-bottom: 3rem;
+   }
+   &__text {
+      text-transform: uppercase;
+   }
+   &__btn {
+      grid-column: col-start 5 / col-end 6;
+      justify-self: center;
+   }
+}
+/*
+
+- Font sizes (px)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/

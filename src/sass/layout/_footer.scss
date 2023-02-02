@@ -1,18 +1,35 @@
 .footer {
-   padding: 1.8rem 0;
-   background-color: $color-green-100;
-   &__credit {
+   background-color: var(--color-green-100);
+   padding: 2.5rem 0;
+
+   &__nav {
+      grid-column: center-start / col-end 5;
+      justify-self: start;
+   }
+   &__list {
+      list-style: none;
+
+      display: flex;
+      gap: 1rem;
+   }
+   &__item {
+   }
+   &__link {
       &:link,
       &:visited {
-         color: $color-white-100;
-         font-size: 1.4rem;
-         justify-self: end;
-         transition: all 0.3s;
+         color: var(--color-white-100);
+         font-size: 2rem;
+         transition: all 0.2s;
+         line-height: 1;
       }
-
       &:hover,
       &:active {
-         color: $color-dark-100;
+         color: var(--color-dark-100);
       }
+   }
+
+   &__credit {
+      grid-column: col-start 6 / center-end;
+      justify-self: end;
    }
 }

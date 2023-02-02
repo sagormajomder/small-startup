@@ -4,25 +4,43 @@
    margin: 0;
    padding: 0;
    box-sizing: inherit;
-   outline: none;
 }
+
 html {
    font-size: 62.5%;
-   overflow-x: hidden;
+   scroll-behavior: smooth;
 }
 body {
-   font-family: var($font-work-sans);
    box-sizing: border-box;
-   font-weight: 400;
-   line-height: 1.5;
-   overflow-x: hidden;
+   min-height: 100vh;
 }
-img {
-   max-width: 100%;
-   display: block;
-}
-a:link,
-a:visited {
+
+a {
    text-decoration: none;
    display: inline-block;
+}
+
+img,
+picture,
+svg,
+video {
+   display: block;
+   max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+   font: inherit;
+}
+
+.container {
+   display: grid;
+   grid-template-columns:
+      [full-start]1fr [center-start] repeat(
+         10,
+         [col-start] minmax(min-content, 12rem) [col-end]
+      )
+      [center-end] 1fr[full-end];
 }

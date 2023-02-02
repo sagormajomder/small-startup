@@ -4,250 +4,259 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- custome JS -->
-      <script defer src="./src/js/app.js"></script>
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Work+Sans:wght@400;500;700&display=swap"
+         rel="stylesheet" />
       <!-- Custom CSS -->
       <link rel="stylesheet" href="./src/css/style.css" />
       <title>Small Startup - Home</title>
    </head>
    <body>
-      <!-- header -->
-      <header class="header">
-         <div class="header__container container">
-            <div class="header__logo-box">
-               <a href="#"
-                  ><img
-                     class="header__logo"
-                     src="./src/img/Logo/LogoWhite.svg"
-                     alt="small startup logo"
-               /></a>
-               <a href="#"><span class="header__text">Start</span></a>
-            </div>
+      <!-- Header Start -->
+      <header class="header container">
+         <div class="header__container">
+            <a href="#" class="header__logo-box"
+               ><img
+                  src="./src/img/Logo/LogoWhite.svg"
+                  alt="Small Startup Logo"
+                  class="header__logo" />Start</a
+            >
 
             <nav class="header__nav">
-               <ul class="header__navbar">
-                  <li><a href="#" class="header__navbar-link">Home</a></li>
-                  <li><a href="#" class="header__navbar-link">Portfolio</a></li>
-                  <li><a href="#" class="header__navbar-link">Service</a></li>
-                  <li><a href="#" class="header__navbar-link">Contact</a></li>
+               <ul class="header__list">
+                  <li class="header__item">
+                     <a href="#" class="header__link">Home</a>
+                  </li>
+                  <li class="header__item">
+                     <a href="#" class="header__link">Portfolio</a>
+                  </li>
+                  <li class="header__item">
+                     <a href="#" class="header__link">Service</a>
+                  </li>
+                  <li class="header__item">
+                     <a href="#" class="header__link">Contact</a>
+                  </li>
                </ul>
             </nav>
-            <!-- Mobile Navigation -->
-            <!-- <button class="header__mobile-nav">
-               <ion-icon
-                  class="header__mobile-nav-icon"
-                  name="menu-outline"
-               ></ion-icon>
-               <ion-icon
-                  class="header__mobile-nav-icon"
-                  name="close-outline"
-               ></ion-icon>
-            </button> -->
          </div>
       </header>
+      <!-- Header End -->
       <main>
-         <!--Start Hero Section -->
-         <section class="section-hero">
-            <div class="hero container grid grid-cols-2">
-               <div class="hero__text-box">
-                  <span class="label text-white">Welcome</span>
-                  <h1 class="heading-primary text-white">
-                     Lorem ipsum dolor sit amet consectetur
-                  </h1>
-                  <p class="paragraph text-white">
-                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                     Suscipit nemo hic quos, ab, dolor aperiam nobis cum est eos
-                     error ipsum, voluptate culpa nesciunt delectus iste?
-                  </p>
-                  <a class="btn btn--white" href="#">Explore</a>
-               </div>
-               <div class="hero__img-box">
-                  <img
-                     src="./src/img/Home/image-1.svg"
-                     alt="pupils play game, pupils generate idea and organize their idea"
-                     class="hero__img"
-                  />
-               </div>
+         <!-- Hero Start -->
+         <section class="hero container">
+            <div class="pattern__content">
+               <span class="label text-white">Welcome</span>
+               <h1 class="heading-1 mb-md text-white">
+                  Lorem ipsum dolor sit amet consectetur
+               </h1>
+               <p class="pattern__text mb-lg">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Debitis laudantium esse nisi corporis temporibus molestiae
+                  obcaecati accusantium repudiandae aut neque?
+               </p>
+
+               <a href="#" class="btn btn--white">Explore</a>
+            </div>
+            <div class="pattern__image-box">
+               <img
+                  src="./src/img/Home/image-1.svg"
+                  alt="Hero Image"
+                  class="pattern__image" />
             </div>
          </section>
-         <!--End Hero Section -->
-         <!-- Start feature-in Section -->
-         <section class="section-feature-in">
-            <div class="container">
-               <div class="feature-in__text-box">
-                  <span class="label text-green">Partners</span>
-                  <h2 class="heading-primary text-black">Lorem ipsum dolor</h2>
-                  <p class="sub-text text-black margin-bottom-huge">
-                     Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                     Tempore, cumque!
-                  </p>
-               </div>
-            </div>
-            <div class="container feature-in grid-center-h">
-               <div
-                  class="feature-in__company-logo grid-cols-5 grid-center-v grid-center-h"
-               >
-                  <img src="./src/img/Companies/Google.svg" alt="Google Logo" />
-                  <img
-                     src="./src/img/Companies/Microsoft.svg"
-                     alt="Microsoft Logo"
-                  />
-                  <img
-                     src="./src/img/Companies/Airbnb.svg"
-                     alt="Airbinb Logo"
-                  />
-                  <img
-                     src="./src/img/Companies/Facebook.svg"
-                     alt="facebook logo"
-                  />
-                  <img
-                     src="./src/img/Companies/Spotify.svg"
-                     alt="Spotify logo"
-                  />
-               </div>
-            </div>
-            <div class="container text-center">
-               <a class="btn btn--dark" href="#">Learn More</a>
-            </div>
-         </section>
-         <!-- End feature-in Section -->
-         <!-- Start Section 3 -->
-         <section class="section-3">
-            <div class="container grid grid-cols-2 grid-center-v">
-               <div class="section-3__img">
-                  <img src="./src/img/Home/image-2.svg" alt="image 2" />
-               </div>
-               <div class="section-3__text-box">
-                  <h2 class="heading-primary">
-                     Lorem ipsum dolor sit amet consectetur.
-                  </h2>
-                  <p class="paragraph text-grey">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Ipsa at esse cum. Beatae harum rerum nemo officiis ipsa
-                     consequatur quibusdam ab sequi saepe tempora, eius,
-                     possimus dolorum incidunt veniam accusantium.
-                  </p>
-                  <a class="btn btn--dark" href="#">Learn More</a>
-               </div>
-            </div>
-         </section>
-         <!-- end Section 3 -->
-         <!-- Start Section 4 -->
-         <section class="section-4">
-            <div class="container grid grid-cols-2 grid-center-v">
-               <div class="section-4__text-box">
-                  <h2 class="heading-primary text-black">
-                     Lorem ipsum dolor sit amet consectetur.
-                  </h2>
-                  <p class="paragraph text-grey">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                     Fuga veniam tenetur ipsam ullam saepe enim dolorem
-                     similique, unde, temporibus distinctio consectetur! Quasi,
-                     asperiores? Vel atque iure nihil rem obcaecati in?
-                  </p>
-                  <a class="btn btn--dark" href="#">Learn More</a>
-               </div>
-               <div class="section-4__img">
-                  <img src="./src/img/Home/image-3.svg" alt="image 2" />
-               </div>
-            </div>
-         </section>
-         <!-- End Section 4 -->
-         <!-- Start Section team -->
-         <section class="section-team">
-            <div class="container text-center">
-               <span class="label text-green">Team</span>
-               <h2 class="heading-primary text-black">Our Talents</h2>
-               <p class="sub-text text-black margin-bottom-lg">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Tempore, cumque!
+         <!-- Hero End -->
+         <section class="partner container">
+            <div class="intro__content">
+               <span class="label text-green">Partners</span>
+               <h2 class="heading-2 mb-md">Lorem Ipsum Dolor</h2>
+               <p class="intro__text mb-huge">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                </p>
             </div>
-            <div class="container">
-               <div class="team grid-cols-4 margin-bottom-huge">
-                  <div class="team__member">
-                     <img src="./src/img/team/Peg_Legge.svg" alt="Peg_Legge" />
-
-                     <p class="team__title">Pag Legge</p>
-                     <span class="team__position">CEO</span>
-                  </div>
-                  <div class="team__member">
-                     <img src="./src/img/team/Richard.svg" alt="Richard" />
-
-                     <p class="team__title">Ricard Guerra</p>
-                     <span class="team__position">CTO</span>
-                  </div>
-                  <div class="team__member">
-                     <img src="./src/img/team/Alexandra.svg" alt="Alexander" />
-
-                     <p class="team__title">Alexander Stolz</p>
-                     <span class="team__position">Designer</span>
-                  </div>
-                  <div class="team__member">
-                     <img src="./src/img/team/Janet.svg" alt="Janet" />
-                     <p class="team__title">Janet Bray</p>
-                     <span class="team__position">Develoer</span>
-                  </div>
-               </div>
-               <div class="text-center">
-                  <a class="btn btn--dark" href="#">View Team</a>
-               </div>
+            <div class="partner__logos">
+               <img
+                  src="./src/img/Companies/Google.svg"
+                  alt="Partner Logo"
+                  class="partner__logo" />
+               <img
+                  src="./src/img/Companies/Microsoft.svg"
+                  alt="Partner Logo"
+                  class="partner__logo" />
+               <img
+                  src="./src/img/Companies/Airbnb.svg"
+                  alt="Partner Logo"
+                  class="partner__logo" />
+               <img
+                  src="./src/img/Companies/Facebook.svg"
+                  alt="Partner Logo"
+                  class="partner__logo" />
+               <img
+                  src="./src/img/Companies/Spotify.svg"
+                  alt="Partner Logo"
+                  class="partner__logo" />
+            </div>
+            <div class="partner__btn">
+               <a href="#" class="btn btn--dark">Learn More</a>
             </div>
          </section>
-         <!-- End Section team -->
+         <!-- Marketing Start -->
+         <section class="marketing container">
+            <div class="pattern__image-box pattern__image-box--2">
+               <img
+                  src="./src/img/Home/image-2.svg"
+                  alt="Maketing Image"
+                  class="pattern__image" />
+            </div>
+            <div class="pattern__content pattern__content--2">
+               <h1 class="heading-1 mb-md">
+                  Lorem ipsum dolor sit amet consectetur
+               </h1>
+               <p class="pattern__text pattern__text--2 mb-lg">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Debitis laudantium esse nisi corporis temporibus molestiae
+                  obcaecati accusantium repudiandae aut neque?
+               </p>
+
+               <a href="#" class="btn btn--dark">Explore</a>
+            </div>
+         </section>
+         <!-- Marketing End -->
+         <!-- Working Start -->
+         <section class="working container">
+            <div class="pattern__content">
+               <h1 class="heading-1 mb-md">
+                  Lorem ipsum dolor sit amet consectetur
+               </h1>
+               <p class="pattern__text pattern__text--2 mb-lg">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Debitis laudantium esse nisi corporis temporibus molestiae
+                  obcaecati accusantium repudiandae aut neque?
+               </p>
+
+               <a href="#" class="btn btn--dark">Explore</a>
+            </div>
+            <div class="pattern__image-box">
+               <img
+                  src="./src/img/Home/image-3.svg"
+                  alt="Working Image"
+                  class="pattern__image" />
+            </div>
+         </section>
+         <!-- Working End -->
+         <!-- Team Start -->
+         <section class="teams container">
+            <div class="intro__content">
+               <span class="label text-green">Teams</span>
+               <h2 class="heading-2 mb-md">Our Talents</h2>
+               <p class="intro__text mb-huge">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+               </p>
+            </div>
+
+            <div class="team">
+               <div class="team__member">
+                  <img
+                     src="./src/img/team/Peg_Legge.svg"
+                     alt="Peg Legge Image"
+                     class="team__img" />
+
+                  <h4 class="heading-4 mb-sm">Peg Legge</h4>
+                  <p class="team__text">Ceo</p>
+               </div>
+               <div class="team__member">
+                  <img
+                     src="./src/img/team/Richard.svg"
+                     alt="Richard Guerra Image"
+                     class="team__img" />
+
+                  <h4 class="heading-4 mb-sm">Richard Guerra</h4>
+                  <p class="team__text">Cto</p>
+               </div>
+               <div class="team__member">
+                  <img
+                     src="./src/img/team/Alexandra.svg"
+                     alt="Alexandra Stolz Image"
+                     class="team__img" />
+                  <h4 class="heading-4 mb-sm">Alexandra Stolz</h4>
+                  <p class="team__text">Designer</p>
+               </div>
+               <div class="team__member">
+                  <img
+                     src="./src/img/team/Janet.svg"
+                     alt="Janet Bray Image"
+                     class="team__img" />
+
+                  <h4 class="heading-4 mb-sm">Janet Bray</h4>
+                  <p class="team__text">Developer</p>
+               </div>
+            </div>
+            <div class="team__btn">
+               <a href="#" class="btn btn--dark">View Team</a>
+            </div>
+         </section>
+         <!-- Team End -->
       </main>
-      <footer class="footer">
-         <div class="container grid grid-cols-2">
-            <ul class="social">
-               <li>
-                  <a class="social__link" href="#"
-                     ><ion-icon name="logo-facebook"> </ion-icon
+      <!-- Footer Start -->
+      <footer class="footer container">
+         <nav class="footer__nav">
+            <ul class="footer__list">
+               <li class="footer__item">
+                  <a href="#" class="footer__link"
+                     ><ion-icon name="logo-facebook"></ion-icon
                   ></a>
                </li>
-               <li>
-                  <a class="social__link" href="#"
-                     ><ion-icon name="logo-instagram"></ion-icon
-                  ></a>
-               </li>
-               <li>
-                  <a class="social__link" href="#"
+               <li class="footer__item">
+                  <a href="#" class="footer__link"
                      ><ion-icon name="logo-twitter"></ion-icon
                   ></a>
                </li>
-               <li>
-                  <a class="social__link" href="#"
-                     ><ion-icon name="logo-pinterest"></ion-icon
+               <li class="footer__item">
+                  <a href="#" class="footer__link"
+                     ><ion-icon name="logo-instagram"></ion-icon
                   ></a>
                </li>
-               <li>
-                  <a class="social__link" href="#"
-                     ><ion-icon name="logo-tiktok"></ion-icon
+               <li class="footer__item">
+                  <a href="#" class="footer__link"
+                     ><ion-icon name="logo-linkedin"></ion-icon
                   ></a>
                </li>
-               <li>
-                  <a class="social__link" href="#"
-                     ><ion-icon name="logo-whatsapp"></ion-icon
-                  ></a>
-               </li>
-               <li>
-                  <a class="social__link" href="#"
+               <li class="footer__item">
+                  <a href="#" class="footer__link"
                      ><ion-icon name="logo-youtube"></ion-icon
                   ></a>
                </li>
+               <li class="footer__item">
+                  <a href="#" class="footer__link"
+                     ><ion-icon name="logo-whatsapp"></ion-icon
+                  ></a>
+               </li>
+               <li class="footer__item">
+                  <a href="#" class="footer__link"
+                     ><ion-icon name="logo-pinterest"></ion-icon
+                  ></a>
+               </li>
+               <li class="footer__item">
+                  <a href="#" class="footer__link"
+                     ><ion-icon name="logo-tiktok"></ion-icon
+                  ></a>
+               </li>
             </ul>
-            <a href="#" class="footer__credit">
-               &copy; Start, 2022. All rights reserved.
-            </a>
-         </div>
+         </nav>
+
+         <p class="footer__credit text-white">
+            &copy; 2023 All rights reserved by its owner
+         </p>
       </footer>
+      <!-- Footer End -->
       <!-- Icons -->
       <script
          type="module"
-         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-      ></script>
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script
          nomodule
-         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-      ></script>
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
    </body>
 </html>

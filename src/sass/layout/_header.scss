@@ -1,57 +1,59 @@
 .header {
-   background-color: $color-green-100;
-   padding: 1.6rem 0;
-   position: relative;
-
+   background-color: var(--color-green-100);
+   padding: 3.2rem 0 1rem;
    &__container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 6.4rem;
-   }
+      grid-column: center-start / center-end;
 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
    &__logo-box {
       display: flex;
+      gap: 1.2rem;
       align-items: center;
-      gap: 0.8rem;
+
+      font-size: 4rem;
+      font-weight: 500;
+      color: var(--color-white-100);
    }
    &__logo {
-      height: 4.8rem;
-   }
-   &__text {
       display: inline-block;
-      font-size: $h1;
-      color: $color-white-100;
-      font-weight: 500;
+      height: 5rem;
    }
 
-   &__navbar {
+   &__nav {
+   }
+   &__list {
       list-style: none;
+
       display: flex;
       gap: 2.4rem;
    }
-   &__navbar-link {
+   &__item {
+   }
+   &__link {
       &:link,
       &:visited {
-         font-size: $sub-text;
-         color: $color-white-100;
-         transition: all 0.3s;
+         font-size: var(--sub-heading);
+         color: var(--color-white-100);
+         transition: all 0.2s;
       }
-
       &:hover,
       &:active {
-         color: $color-dark-100;
+         color: var(--color-dark-100);
       }
    }
-
-   &__mobile-nav {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-   }
-   &__mobile-nav-icon {
-      font-size: $h2;
-      color: $color-white-100;
-   }
 }
+
+/*
+
+- Font sizes (px)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/

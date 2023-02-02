@@ -1,31 +1,43 @@
 .text-white {
-   color: $color-white-100;
+   color: var(--color-white-100) !important;
 }
 .text-black {
-   color: $color-dark-100;
+   color: var(--color-dark-100) !important;
 }
 
 .text-grey {
-   color: $color-dark-50;
+   color: var(--color-dark-50) !important;
 }
 .text-green {
-   color: $color-green-100;
+   color: var(--color-green-100) !important;
 }
 
 .text-center {
-   text-align: center;
+   text-align: center !important;
 }
 
-.margin-bottom-sm {
-   margin-bottom: 1.6rem;
+.mb-sm {
+   margin-bottom: 1.6rem !important;
 }
-.margin-bottom-md {
-   margin-bottom: 2.4rem;
+.mb-md {
+   margin-bottom: 2.4rem !important;
 }
-.margin-bottom-lg {
-   margin-bottom: 3.2rem;
+.mb-lg {
+   margin-bottom: 3.6rem !important;
 }
 
-.margin-bottom-huge {
-   margin-bottom: 4.8rem;
+.mb-huge {
+   margin-bottom: 6.4rem !important;
 }
+
+/*
+
+- Font sizes (px)
+
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/

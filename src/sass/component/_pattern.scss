@@ -1,0 +1,27 @@
+.pattern {
+   &__content {
+      width: 75%;
+      grid-column: center-start / col-end 5;
+      align-self: center;
+      justify-self: start;
+      color: var(--color-dark-100);
+      &--2 {
+         grid-column: col-start 6 / col-end 10;
+         justify-self: end;
+      }
+   }
+
+   &__text {
+      color: var(--color-white-75);
+      &--2 {
+         color: var(--color-dark-50);
+      }
+   }
+   &__image-box {
+      grid-column: col-start 6 / col-end 10;
+
+      &--2 {
+         grid-column: center-start / col-end 5;
+      }
+   }
+}
