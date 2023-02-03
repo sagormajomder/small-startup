@@ -6,13 +6,25 @@
    box-sizing: inherit;
 }
 
+::selection {
+   background-color: var(--color-green-100);
+   color: var(--color-white-100);
+}
+
 html {
    font-size: 62.5%;
-   scroll-behavior: smooth;
+   overflow-x: hidden;
+
+   @include respond(tab-land) {
+      font-size: 50%;
+   }
 }
 body {
    box-sizing: border-box;
    min-height: 100vh;
+
+   position: relative;
+   overflow-x: hidden;
 }
 
 a {
@@ -40,7 +52,14 @@ select {
    grid-template-columns:
       [full-start]1fr [center-start] repeat(
          10,
-         [col-start] minmax(min-content, 12rem) [col-end]
+         [col-start] minmax(min-content, 11.4rem) [col-end]
       )
       [center-end] 1fr[full-end];
+
+   row-gap: 6rem;
+
+   @include respond(tab-land) {
+      padding-left: 2.5rem !important;
+      padding-right: 2.5rem !important;
+   }
 }

@@ -3,11 +3,12 @@
 
    display: flex;
    justify-content: space-between;
+   gap: 3rem;
    align-items: center;
 
-   margin-bottom: 6rem;
    &__member {
-      padding: 2.4rem 4rem;
+      padding: 2.4rem 3rem;
+
       box-shadow: 0 1rem 2rem var(--color-dark-25);
       transition: all 0.4s;
 
@@ -15,16 +16,30 @@
          transform: translateY(-2rem);
          box-shadow: 0 1.5rem 2.5rem var(--color-dark-25);
       }
+
+      @include respond(tab-port) {
+         width: 44%;
+         text-align: center;
+      }
+      @include respond(phone) {
+         width: 100%;
+      }
    }
    &__img {
       margin-bottom: 3rem;
+      @include respond(tab-port) {
+         margin-left: auto;
+         margin-right: auto;
+      }
    }
    &__text {
       text-transform: uppercase;
    }
-   &__btn {
-      grid-column: col-start 5 / col-end 6;
-      justify-self: center;
+
+   @include respond(tab-port) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 5rem;
    }
 }
 /*

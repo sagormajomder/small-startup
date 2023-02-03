@@ -9,6 +9,14 @@
          grid-column: col-start 6 / col-end 10;
          justify-self: end;
       }
+
+      @include respond(tab-port) {
+         grid-column: center-start / center-end;
+         justify-self: start;
+      }
+      @include respond(phone) {
+         justify-self: center;
+      }
    }
 
    &__text {
@@ -23,5 +31,19 @@
       &--2 {
          grid-column: center-start / col-end 5;
       }
+
+      @include respond(tab-port) {
+         grid-row: 1;
+         grid-column: center-start / center-end;
+         justify-self: center;
+      }
+      @include respond(phone) {
+         justify-self: center;
+      }
+   }
+   &__image {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
    }
 }

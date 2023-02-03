@@ -2,17 +2,29 @@
    background-color: var(--color-green-100);
    padding: 2.5rem 0;
 
+   align-items: center;
+
+   row-gap: 2rem;
+
    &__nav {
       grid-column: center-start / col-end 5;
       justify-self: start;
+
+      @include respond(phone) {
+         grid-column: center-start / center-end;
+         justify-self: center;
+      }
    }
    &__list {
       list-style: none;
 
       display: flex;
+
       gap: 1rem;
-   }
-   &__item {
+
+      @include respond(phone) {
+         gap: 2rem;
+      }
    }
    &__link {
       &:link,
@@ -22,14 +34,24 @@
          transition: all 0.2s;
          line-height: 1;
       }
+
       &:hover,
       &:active {
          color: var(--color-dark-100);
+      }
+
+      [name^="logo"] {
+         margin-top: 0.5rem;
       }
    }
 
    &__credit {
       grid-column: col-start 6 / center-end;
       justify-self: end;
+
+      @include respond(phone) {
+         grid-column: center-start / center-end;
+         justify-self: center;
+      }
    }
 }

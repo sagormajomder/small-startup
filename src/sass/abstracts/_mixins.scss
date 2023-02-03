@@ -1,0 +1,32 @@
+// RESPONDSIVE MANAGER
+/*
+0-600px:            Phone                             : 37.5em
+600px-900px:        Tab-Port                          : 56.25em
+900px-1200px:       Tab-Land                          : 75em
+[1200px - 1800px]:  Where our normal style apply
+1800px+ :            Big Desktop                       : 112.5em
+ORDER: base+typograph > general layout+grid > page layout > components
+*/
+@mixin respond($bp) {
+   @if ($bp == "tab-land") {
+      @media only screen and (max-width: 75em) {
+         @content;
+      }
+   }
+   @if ($bp == "tab-port") {
+      @media only screen and (max-width: 56.25em) {
+         @content;
+      }
+   }
+   @if ($bp == "phone") {
+      @media only screen and (max-width: 37.5em) {
+         @content;
+      }
+   }
+
+   @if ($bp == "big-desktop") {
+      @media only screen and (min-width: 112.5em) {
+         @content;
+      }
+   }
+}

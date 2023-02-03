@@ -22,15 +22,50 @@
       height: 5rem;
    }
 
+   /////////////////////////////////////
+   /* NAVIGATION */
+   ////////////////////////////////////
    &__nav {
+      @include respond(tab-port) {
+         width: 100vw;
+         height: 100vh;
+         position: absolute;
+         top: 0;
+         left: 0;
+         background: var(--color-white-100);
+
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         transform: translateX(100%);
+
+         opacity: 0;
+         visibility: hidden;
+         pointer-events: none;
+
+         transition: all 0.5s;
+      }
    }
+
+   &__nav-open &__nav {
+      transform: translateX(0);
+
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+   }
+
    &__list {
       list-style: none;
 
       display: flex;
       gap: 2.4rem;
-   }
-   &__item {
+
+      @include respond(tab-port) {
+         flex-direction: column;
+         gap: 3rem;
+      }
    }
    &__link {
       &:link,
@@ -38,22 +73,87 @@
          font-size: var(--sub-heading);
          color: var(--color-white-100);
          transition: all 0.2s;
+
+         @include respond(tab-port) {
+            font-size: 4rem;
+            color: var(--color-dark-100);
+         }
       }
       &:hover,
       &:active {
          color: var(--color-dark-100);
       }
    }
+
+   &__btn {
+      border: none;
+      outline: none;
+      border-radius: 0;
+      display: none;
+      background: none;
+      cursor: pointer;
+      width: 3rem;
+      height: 4rem;
+
+      @include respond(tab-port) {
+         display: block;
+         z-index: 9999;
+      }
+   }
+   &__icon {
+      position: relative;
+      &,
+      &::before,
+      &::after {
+         display: block;
+         width: 100%;
+         height: 2px;
+         background-color: var(--color-white-100);
+      }
+      &::before,
+      &::after {
+         content: "";
+         position: absolute;
+
+         transition: transform 0.2s;
+      }
+      &::before {
+         top: -0.8rem;
+      }
+      &::after {
+         top: 0.8rem;
+      }
+   }
+
+   &__nav-open &__icon,
+   &__nav-open &__icon::before,
+   &__nav-open &__icon::after {
+      background-color: var(--color-dark-100);
+   }
+
+   &__nav-open &__icon {
+      background-color: transparent;
+   }
+
+   &__nav-open &__icon::before {
+      top: 0;
+      transform: rotate(135deg);
+   }
+   &__nav-open &__icon::after {
+      top: 0;
+      transform: rotate(-135deg);
+   }
+
+   // Sticky header
+   .sticky & {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 8rem;
+      padding-top: 0;
+      padding-bottom: 0;
+      z-index: 1000;
+      box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+   }
 }
-
-/*
-
-- Font sizes (px)
-
-10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
-- Spacing system (px)
-
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
-
-*/
