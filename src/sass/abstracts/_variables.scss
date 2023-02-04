@@ -21,4 +21,8 @@
    --color-green-75: rgba(116, 198, 157, 0.75);
    --color-green-50: rgba(116, 198, 157, 0.5);
    --color-green-25: rgba(116, 198, 157, 0.25);
+
+   // BOX-SHADOW
+   --shadow-dark: 0 1rem 2rem var(--color-dark-25);
+   --shadow-dark-hover: 0 1.5rem 2.5rem var(--color-dark-25);
 }

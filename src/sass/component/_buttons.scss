@@ -1,7 +1,9 @@
 .btn {
+   &,
    &:link,
    &:visited {
       padding: 1rem 4rem;
+      border: none;
       text-align: center;
       font-size: var(--sub-heading);
       border-radius: 0.7rem;

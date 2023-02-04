@@ -6,6 +6,8 @@
 @import "./base/utilities";
 
 @import "./component/buttons";
+@import "./component/card";
+@import "./component/form";
 @import "./component/intro";
 @import "./component/pattern";
 @import "./component/team";
@@ -14,4 +16,6 @@
 @import "./layout/footer";
 
 @import "./pages/home";
+@import "./pages/contact";
 @import "./pages/portfolio";
+@import "./pages/service";

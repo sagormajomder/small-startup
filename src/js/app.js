@@ -9,6 +9,8 @@ headerBtn.addEventListener("click", function () {
 
 const heroEl = document.querySelector(".hero");
 const portfolioEl = document.querySelector(".portfolio__content");
+const serviceEl = document.querySelector(".service__content");
+const contactEl = document.querySelector(".contact__content");
 const obs = new IntersectionObserver(
    function (entries) {
       const ent = entries[0];
@@ -34,4 +36,10 @@ if (heroEl) {
 
 if (portfolioEl) {
    obs.observe(portfolioEl);
+}
+if (serviceEl) {
+   obs.observe(serviceEl);
+}
+if (contactEl) {
+   obs.observe(contactEl);
 }

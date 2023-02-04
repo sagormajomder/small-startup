@@ -1,0 +1,70 @@
+.card {
+   grid-column: center-start / center-end;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 8rem;
+   &__box {
+      text-align: center;
+      padding: 4rem;
+
+      box-shadow: var(--shadow-dark);
+
+      transition: all 0.3s;
+
+      &:hover {
+         transform: translateY(-1.5rem);
+         box-shadow: var(--shadow-dark-hover);
+      }
+      // 888px
+      @media only screen and (max-width: 55.45em) {
+         &--3 {
+            grid-column: 1 / -1;
+            justify-self: center;
+         }
+      }
+   }
+
+   &__title {
+      color: var(--color-dark-100);
+      display: block;
+   }
+   &__price {
+      display: block;
+      font-size: 3.6rem;
+      font-weight: 700;
+      color: var(--color-dark-100);
+      margin-bottom: 1.5rem;
+
+      span {
+         font-size: 1.5rem;
+         color: var(--color-dark-50);
+         font-weight: 500;
+      }
+   }
+   &__details {
+      margin-bottom: 3rem;
+   }
+   &__list {
+      list-style: none;
+      margin-bottom: 2rem;
+   }
+   &__item {
+      color: var(--color-dark-100);
+      display: flex;
+      align-items: center;
+      column-gap: 0.8rem;
+      [name="checkmark-outline"] {
+         width: 2rem;
+         height: 2rem;
+         color: var(--color-green-100);
+      }
+
+      &:not(:last-child) {
+         margin-bottom: 1rem;
+      }
+
+      @include respond(tab-port) {
+         justify-content: center;
+      }
+   }
+}

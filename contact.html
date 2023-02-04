@@ -18,7 +18,7 @@
       <script defer src="./src/js/app.js"></script>
       <!-- Custom CSS -->
       <link rel="stylesheet" href="./src/css/style.css" />
-      <title>Small Startup - Porfolio</title>
+      <title>Small Startup - Contact</title>
    </head>
    <body>
       <header class="header container">
@@ -55,71 +55,27 @@
          </div>
       </header>
       <main>
-         <section class="portfolio container">
-            <div class="intro__content portfolio__content">
-               <span class="label text-green">Works</span>
-               <h2 class="heading-2 mb-md">Portfolio</h2>
+         <section class="contact container">
+            <div class="intro__content contact__content">
+               <h2 class="heading-2 mb-md">Contact Us</h2>
                <p class="intro__text">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                </p>
             </div>
-            <div class="portfolio__projects">
-               <a href="#" class="portfolio__project"
-                  ><img src="./src/img/Portfolio/sample-1.svg" alt="Project 1"
-               /></a>
-               <a href="#" class="portfolio__project"
-                  ><img src="./src/img/Portfolio/sample-2.svg" alt="Project 2"
-               /></a>
-               <a href="#" class="portfolio__project"
-                  ><img src="./src/img/Portfolio/sample-3.svg" alt="Project 3"
-               /></a>
-               <a href="#" class="portfolio__project"
-                  ><img src="./src/img/Portfolio/sample-4.svg" alt="Project 4"
-               /></a>
-               <a href="#" class="portfolio__project"
-                  ><img src="./src/img/Portfolio/sample-5.svg" alt="Project 5"
-               /></a>
-               <a href="#" class="portfolio__project"
-                  ><img src="./src/img/Portfolio/sample-6.svg" alt="Project 6"
-               /></a>
-               <a href="#" class="portfolio__project"
-                  ><img src="./src/img/Portfolio/sample-7.svg" alt="Project 7"
-               /></a>
-               <a href="#" class="portfolio__project"
-                  ><img src="./src/img/Portfolio/sample-8.png" alt="Project 8"
-               /></a>
-
-               <!-- <img
-                  src="./src/img/Portfolio/sample-2.svg"
-                  alt="Project 2"
-                  class="portfolio__project" />
-               <img
-                  src="./src/img/Portfolio/sample-3.svg"
-                  alt="Project 3"
-                  class="portfolio__project" />
-               <img
-                  src="./src/img/Portfolio/sample-4.svg"
-                  alt="Project 4"
-                  class="portfolio__project" />
-               <img
-                  src="./src/img/Portfolio/sample-5.svg"
-                  alt="Project 5"
-                  class="portfolio__project" />
-               <img
-                  src="./src/img/Portfolio/sample-6.svg"
-                  alt="Project 6"
-                  class="portfolio__project" />
-               <img
-                  src="./src/img/Portfolio/sample-7.svg"
-                  alt="Project 7"
-                  class="portfolio__project" />
-               <img
-                  src="./src/img/Portfolio/sample-8.png"
-                  alt="Project 8"
-                  class="portfolio__project" /> -->
-            </div>
-            <div class="portfolio__btn">
-               <a href="#" class="btn btn--dark">Learn More</a>
+            <form action="#" class="form">
+               <label for="name">Name</label>
+               <input type="text" name="" id="name" class="form__input" />
+               <label for="email">Email</label>
+               <input type="email" name="" id="email" class="form__input" />
+               <label for="message">Message</label>
+               <textarea
+                  name=""
+                  id="message"
+                  class="form__message mb-md"></textarea>
+               <button class="btn btn--dark">Submit</button>
+            </form>
+            <div class="contact__map">
+               <img src="./src/img/Contact/map.svg" alt="Contact Map" />
             </div>
          </section>
       </main>

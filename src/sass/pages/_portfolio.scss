@@ -11,9 +11,14 @@
    }
 
    &__project {
+      display: block;
+      cursor: pointer;
       width: calc(100% / 2 - 4rem);
-      max-height: 100%;
-      max-width: unset;
+
+      img {
+         max-height: 100%;
+      }
+
       @include respond(phone) {
          width: 100%;
       }

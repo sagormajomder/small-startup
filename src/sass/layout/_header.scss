@@ -16,10 +16,17 @@
       font-size: 4rem;
       font-weight: 500;
       color: var(--color-white-100);
+
+      @include respond(phone) {
+         font-size: 3rem;
+      }
    }
    &__logo {
       display: inline-block;
       height: 5rem;
+      @include respond(phone) {
+         height: 4rem;
+      }
    }
 
    /////////////////////////////////////

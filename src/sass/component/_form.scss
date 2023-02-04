@@ -1,0 +1,32 @@
+.form {
+   grid-column: center-start / col-end 5;
+   display: grid;
+   row-gap: 1rem;
+   color: var(--color-dark-100);
+
+   %form_same {
+      padding: 1.5rem 0.8rem;
+      background-color: #efefef;
+      border: none;
+      border: 1px solid var(--color-dark-100);
+      outline: none;
+      border-radius: 3px;
+   }
+
+   &__input {
+      height: 3rem;
+      @extend %form_same;
+   }
+   &__message {
+      height: 8rem;
+      @extend %form_same;
+   }
+
+   @include respond(tab-port) {
+      grid-column: center-start / center-end;
+   }
+
+   @include respond(phone) {
+      grid-column: 1 / -1;
+   }
+}
