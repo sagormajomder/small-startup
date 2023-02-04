@@ -8,7 +8,7 @@ Small startup website is a fictional website of a small startup company. This we
 -  [What I have learned](#what-i-have-learned)
 -  [How to run](#how-to-run)
 -  [screenshot](#sreenshot)
--  [Contact](#link)
+-  [Link](#link)
 -  [Credit](#credit)
 
 ## Technology I used
@@ -63,7 +63,7 @@ Please follow the below instructions to run this project in your machine:
 
 GitHub Repository Link: [https://github.com/sagormajomder/small-startup.git](https://github.com/sagormajomder/small-startup.git)
 
-Website Live Link: [https://sagormajomder.github.io//small-startup](https://sagormajomder.github.io//small-startup)
+Website Live Link: [https://sagormajomder.github.io/small-startup](https://sagormajomder.github.io/small-startup)
 
 Figma Design Link: [https://www.figma.com/community/file/1150370769219258177](https://www.figma.com/community/file/1150370769219258177)
 
